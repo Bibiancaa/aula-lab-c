@@ -34,3 +34,81 @@ int main()
     }
     
 }
+//2
+#include <stdio.h>
+int main()
+{
+    float tc, tf;
+    int n, i;
+
+    printf("Quantras temperaturas quer converter: ");
+    scanf("%d", &n);
+
+    for(int i=0; i<n; i++)
+    {
+        printf("Digite a temperatura em Celsius: ");
+        scanf("%f", &tc);
+        tf = (tc*9/5) + 32;
+        printf("A temperura de %.1f é %.1f Fahrenheit.\n", tc, tf);
+
+    }
+
+}
+
+//3
+#include <stdio.h>
+int main()
+{
+    float tc, tf;
+    int n, i;
+
+    printf("Quantras temperaturas quer converter: ");
+    scanf("%d", &n);
+
+    i=0;
+
+    do
+    {
+         printf("Digite a temperatura em Celsius: ");
+        scanf("%f", &tc);
+        tf = (tc*9/5) + 32;
+        i++;
+        printf("A temperura de %.1f é %.1f Fahrenheit.\n", tc, tf);
+    }
+    while (i<n);
+    
+}
+//4 q vai guardar as muito quentes e m média arrumar q ta dando errado
+#include <stdio.h>
+int main()
+{
+    float tc, tf, m;
+    int n, i, q;
+
+    printf("Quantras temperaturas quer converter: ");
+    scanf("%d", &n);
+
+    i=0;
+    q=0;
+    
+
+    do
+    {
+         printf("Digite a temperatura em Celsius: ");
+        scanf("%f", &tc);
+        tf = (tc*9/5) + 32;
+        i++;
+        printf("A temperura de %.1f é %.1f Fahrenheit.\n", tc, tf);
+
+        if (tf>175)
+            printf("Muito quente!");
+            scanf("%d", &q);
+            q++;
+
+        
+    }
+    while (i<n);
+    
+
+    printf("A temperatura ultrapassou do valor normal %d vezes. \n", q);
+}
