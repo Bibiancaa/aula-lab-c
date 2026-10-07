@@ -112,3 +112,25 @@ int main()
 
     printf("A temperatura ultrapassou do valor normal %d vezes. \n", q);
 }
+
+
+
+
+for:
+
+
+#include <stdio.h>
+{
+int main()
+int n;
+float tc, tf;
+printf ("Insira a quantidade de temperaturas: ")
+scanf("%d", &n);
+
+
+    for (int i=0;i=n;i++);
+        cout <<n<< ",0";{
+        ("Quantas temperaturas quer converter: ");
+
+    }
+}
